@@ -1,0 +1,143 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+ background-color: #ccccff;
+text-align: center;
+}
+
+main{
+ margin: 2em;
+  border: 10px dashed #9999ff; 
+}
+/* STYLE TEXT */
+
+h1 {
+  color: navy;
+  font-family: Arial 
+}
+
+h3{
+   font-family: Arial 
+}
+
+.about-me{
+   font-family: helvetica;
+   font-size: 20px;
+   margin-bottom: 2em;
+   border-top: 10px dotted #9999ff;
+   margin-top: 2em;
+   margin-right: 5%;
+   margin-left: 5%;
+}
+
+p{
+   font-family: helvetica;
+   margin-right: 5%;
+   margin-left: 5%;
+   font-size: 22px;
+}
+
+.info{
+   margin-top: 2em;
+   border: 10px solid  #9999ff;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin: 3em;
+}
+
+/* STYLE IMAGES */
+img {
+   display: block;
+   width: 80%;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+
+   border-style: solid;
+   border: 6px solid #9999ff;
+}
+
+/* STYLE NAV BAR */
+nav ul{
+  list-style-type: none;
+  background-color: #9999ff;
+  overflow: hidden;
+  padding: 1em;
+   margin-bottom: 1em;
+}
+
+nav li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding: 1em;
+}
+
+li a:hover {
+  background-color: #6666ff
+}
+/* STYLE BUTTONS */
+button{
+   font-size: 20px;
+   padding: 5px;
+   background-color: #6666ff;
+   border-radius: 10%;
+   color: black;
+}
+/* ADD MORE! */
+.inputs{
+   margin: 2em;
+   border: 6px solid black;
+   padding-top: 1em;
+   background-color:#b3b3ff;
+   border-radius: 20%;
+   font-size: 20px;
+   font-family: Arial;
+  
+}
+.inputs ul{
+   list-style-type: none;
+}
+
+#secret{
+   margin: 1em;
+   font-size: 20px;
+   border: 10px dotted #9999ff;
+   font-family: Helvetica;
+   padding: 1em;
+}
+
+#fact{
+   background-color: #99b3ff;
+   border: 5px solid black;
+   padding: 1em;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row; /*keeps in row*/
+  flex-wrap: nowrap; /*keep in 1 line*/
+}
+
+.flex-item{
+   flex-basis: 100%;
+   margin: 1%;
+}
+
+@media screen and (max-width: 850px){
+  .flex-container{
+    flex-wrap: nowrap;
+  }
+   li a {
+       font-size: 1em;
+       padding: 0.5em;
+     }
+}
